@@ -1,0 +1,4 @@
+#!/bin/bash
+
+memory="$(awk 'FNR == 2 {print $3}' <(free -h -t))/$(awk 'FNR == 2 {print $2}' <(free -h -t))"
+echo -e "$memory]"

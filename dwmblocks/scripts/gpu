@@ -1,0 +1,4 @@
+#!/bin/bash
+
+gpu="$(awk 'FNR == 3 {print $5}' <(optimus-manager --status))"
+echo -e "$gpu]"

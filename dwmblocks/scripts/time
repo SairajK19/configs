@@ -1,0 +1,4 @@
+#!/bin/bash
+
+time="$(date +%I:%M) $(awk '{print $5}' <(date))"
+echo -e "$time] "

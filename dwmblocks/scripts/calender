@@ -1,0 +1,4 @@
+#!/bin/bash
+
+calender="$(awk '{print $3" "$2" "$7}' <(date))"
+echo -e "$calender]"

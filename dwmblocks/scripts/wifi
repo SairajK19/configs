@@ -1,0 +1,10 @@
+#!/bin/bash
+
+state=$(awk 'FNR == 6 {print $2}' <(iwctl station wlan0 show))
+
+if [ $state == "connected" ]
+then
+	echo -e "$(awk 'FNR == 7 {print $3" "$4}' <(iwctl station wlan0 show))]"
+else
+	echo -e "Not Connected]"
+fi
