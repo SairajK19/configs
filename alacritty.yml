@@ -21,6 +21,9 @@
 # check the local terminfo database and use `alacritty` if it is
 # available, otherwise `xterm-256color` is used.
 #TERM: alacritty
+env:
+  TERM: xterm-256color
+
 window:
   # Window dimensions (changes require restart)
   #
@@ -63,7 +66,7 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 1
+  opacity: 0.85
   # Startup Mode (changes require restart)
   #
   # Values for `startup_mode`:
@@ -818,26 +821,26 @@ key_bindings:
 
 colors:
   primary:
-    background: "#0B0B0B"
-    foreground: "#bbafc7"
-    cursor: "#bbafc7"
+    background: "#000000"
+    foreground: "#b0b0b0"
+    cursor: "#b0b0b0"
 
   normal:
-    black: "#0B0B0B"
-    red: "#675078"
-    green: "#725A86"
-    yellow: "#7B678F"
-    blue: "#bbafc7"
-    magenta: "#815E8D"
-    cyan: "#88719A"
-    white: "#bbafc7"
+    black: "#000000"
+    red: "#424242"
+    green: "#a3a2a2"
+    yellow: "#4B4B4B"
+    blue: "#545454"
+    magenta: "#5A5A5A"
+    cyan: "#676767"
+    white: "#b0b0b0"
 
   bright:
-    black: "#827a8b"
-    red: "#675078"
-    green: "#725A86"
-    yellow: "#7B678F"
-    blue: "#bbafc7"
-    magenta: "#815E8D"
-    cyan: "#88719A"
-    white: "#bbafc7"
+    black: "#7b7b7b"
+    red: "#424242"
+    green: "#454545"
+    yellow: "#4B4B4B"
+    blue: "#545454"
+    magenta: "#5A5A5A"
+    cyan: "#676767"
+    white: "#b0b0b0"
