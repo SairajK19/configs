@@ -1,2 +1,0 @@
-# dwm
-My DWM Config

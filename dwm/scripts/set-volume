@@ -16,3 +16,5 @@ then
 else
 	echo "usage: set-volume [-up | -down | -mute]"
 fi
+
+# /home/sairaj/.dwm/scripts/statusbarf -update
